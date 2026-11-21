@@ -1,0 +1,40 @@
+// ============================================
+// 主题配色变量（金色系 · 工行积存金）
+// ============================================
+
+// 品牌主题色：金属金
+$color-primary: #c99a2e;
+$color-primary-light: #e0ba5c;
+$color-primary-dark: #9c7415;
+
+// 功能色
+$color-success: #17a673;
+$color-warning: #e08a1e;
+$color-error: #e0483e;
+$color-info: #c99a2e;
+
+// 涨跌语义色（A 股习惯：红涨绿跌）
+$color-up: #e0483e;
+$color-down: #17a673;
+$color-flat: #8f887c;
+
+// 背景色
+$color-bg-page: #f6f3ec;
+$color-bg-card: #ffffff;
+$color-bg-hover: #f3efe6;
+$color-bg-dark: #221f1a;
+
+// 文本色
+$color-text-primary: #1f1d1a;
+$color-text-secondary: #5c574f;
+$color-text-tertiary: #8f887c;
+$color-text-disabled: #c9c3b6;
+$color-text-white: #ffffff;
+
+// 边框色
+$color-border: #ede7da;
+$color-divider: #f3efe6;
+
+// 品牌渐变
+$gradient-brand: linear-gradient(135deg, #2b2620 0%, #4a3f2a 100%);
+$gradient-gold: linear-gradient(135deg, #e0ba5c 0%, #c99a2e 100%);

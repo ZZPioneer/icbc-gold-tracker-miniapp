@@ -1,0 +1,18 @@
+# 依赖与构建产物
+node_modules/
+dist/
+.swc/
+.temp/
+.rn_temp/
+
+# 预览与工具
+.pai/
+
+# 日志与系统文件
+*.log
+Thumbs.db
+.DS_Store
+
+# 编辑器
+.idea/
+.vscode/

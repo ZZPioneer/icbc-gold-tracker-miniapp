@@ -1,0 +1,12 @@
+@use '@/styles/variables.scss' as *;
+
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.canvas {
+  width: 622rpx;
+  height: 380rpx;
+}

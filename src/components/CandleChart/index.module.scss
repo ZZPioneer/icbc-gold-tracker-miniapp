@@ -1,0 +1,70 @@
+@use '@/styles/variables.scss' as *;
+
+.wrap {
+  width: 100%;
+}
+
+.chart {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  height: 320rpx;
+  padding: $spacing-sm 0;
+  border-bottom: 1rpx solid $color-divider;
+}
+
+.column {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  margin: 0 2rpx;
+}
+
+.wick {
+  position: absolute;
+  left: 50%;
+  width: 2rpx;
+  transform: translateX(-50%);
+  border-radius: $radius-xs;
+}
+
+.body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 70%;
+  max-width: 14rpx;
+  border-radius: 2rpx;
+}
+
+.axis {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: $spacing-xs;
+}
+
+.axisText {
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: $spacing-xs;
+}
+
+.legendText {
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+}
+
+.empty {
+  padding: $spacing-xl 0;
+  text-align: center;
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
+}

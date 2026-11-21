@@ -1,0 +1,56 @@
+@use '@/styles/variables.scss' as *;
+
+.wrap {
+  width: 100%;
+  padding: $spacing-xl 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: $radius-round;
+  border: 4rpx solid rgba(201, 154, 46, 0.2);
+  border-top-color: $color-primary;
+  margin-bottom: $spacing-sm;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.text {
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
+  text-align: center;
+}
+
+.retry {
+  margin-top: $spacing-md;
+  height: $button-height-sm;
+  padding: 0 $spacing-lg;
+  border-radius: $radius-button;
+  background: $gradient-gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+.retryText {
+  font-size: $font-size-sm;
+  color: $color-text-white;
+  white-space: nowrap;
+}

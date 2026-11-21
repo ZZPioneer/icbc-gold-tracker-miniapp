@@ -1,0 +1,117 @@
+@use '@/styles/variables.scss' as *;
+
+.row {
+  padding: $spacing-md;
+  border-radius: $radius-md;
+  background: #fbf9f4;
+  border: 1rpx solid $color-border;
+  transition: background $transition-fast;
+
+  &:active {
+    background: $color-bg-hover;
+  }
+}
+
+.rowActive {
+  background: rgba(201, 154, 46, 0.08);
+  border: 1rpx solid rgba(201, 154, 46, 0.4);
+}
+
+.main {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.nameWrap {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  @include text-ellipsis;
+}
+
+.code {
+  margin-top: 4rpx;
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+  letter-spacing: 0.4rpx;
+}
+
+.priceWrap {
+  display: flex;
+  align-items: center;
+  margin-left: $spacing-sm;
+}
+
+.price {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semibold;
+  font-variant-numeric: tabular-nums;
+}
+
+.pill {
+  margin-left: $spacing-xs;
+  min-width: 104rpx;
+  height: 40rpx;
+  padding: 0 $spacing-xs;
+  border-radius: $radius-round;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pillText {
+  font-size: $font-size-xs;
+  color: $color-text-white;
+  white-space: nowrap;
+}
+
+.pillUp {
+  background: $color-up;
+}
+
+.pillDown {
+  background: $color-down;
+}
+
+.pillFlat {
+  background: $color-flat;
+}
+
+.up {
+  color: $color-up;
+}
+
+.down {
+  color: $color-down;
+}
+
+.flat {
+  color: $color-text-primary;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  margin-top: $spacing-sm;
+  padding-top: $spacing-sm;
+  border-top: 1rpx solid $color-divider;
+}
+
+.metaItem {
+  flex: 1;
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+  @include text-ellipsis;
+
+  & + & {
+    margin-left: $spacing-xs;
+  }
+}

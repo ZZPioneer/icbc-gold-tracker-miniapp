@@ -1,0 +1,50 @@
+@use '@/styles/variables.scss' as *;
+
+.card {
+  width: 100%;
+  box-sizing: border-box;
+  background: $color-bg-card;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-card;
+  padding: $spacing-lg;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $spacing-md;
+}
+
+.titleWrap {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.accent {
+  width: 6rpx;
+  height: 28rpx;
+  border-radius: $radius-xs;
+  background: $gradient-gold;
+  margin-right: $spacing-sm;
+}
+
+.title {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  @include text-ellipsis;
+}
+
+.extra {
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+  margin-left: $spacing-sm;
+  white-space: nowrap;
+}
+
+.body {
+  width: 100%;
+}

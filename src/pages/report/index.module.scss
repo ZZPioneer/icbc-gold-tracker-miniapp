@@ -1,0 +1,109 @@
+@use '@/styles/variables.scss' as *;
+
+.page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: $spacing-md $page-padding $spacing-xl;
+  background: $color-bg-page;
+}
+
+.header {
+  padding: $spacing-lg;
+  border-radius: $radius-xl;
+  background: $gradient-brand;
+  box-shadow: 0 12rpx 32rpx rgba(34, 31, 26, 0.18);
+}
+
+.date {
+  font-size: $font-size-xs;
+  color: rgba(230, 199, 119, 0.9);
+  letter-spacing: 1rpx;
+}
+
+.title {
+  display: block;
+  margin-top: $spacing-xs;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semibold;
+  color: $color-text-white;
+}
+
+.summary {
+  display: block;
+  margin-top: $spacing-sm;
+  font-size: $font-size-sm;
+  line-height: $line-height-loose;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.created {
+  display: block;
+  margin-top: $spacing-sm;
+  font-size: 20rpx;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.section {
+  margin-top: $spacing-md;
+  padding: $spacing-lg;
+  border-radius: $radius-lg;
+  background: $color-bg-card;
+  box-shadow: $shadow-card;
+}
+
+.sectionHead {
+  display: flex;
+  align-items: center;
+  margin-bottom: $spacing-sm;
+}
+
+.accent {
+  width: 6rpx;
+  height: 26rpx;
+  border-radius: $radius-xs;
+  background: $gradient-gold;
+  margin-right: $spacing-sm;
+}
+
+.sectionTitle {
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+}
+
+.sectionBody {
+  font-size: $font-size-sm;
+  line-height: $line-height-loose;
+  color: $color-text-secondary;
+}
+
+.aiCard {
+  margin-top: $spacing-md;
+  padding: $spacing-lg;
+  border-radius: $radius-lg;
+  background: rgba(201, 154, 46, 0.1);
+  border: 1rpx solid rgba(201, 154, 46, 0.28);
+}
+
+.aiTitle {
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  color: $color-primary-dark;
+}
+
+.aiBody {
+  display: block;
+  margin-top: $spacing-sm;
+  font-size: $font-size-sm;
+  line-height: $line-height-loose;
+  color: $color-text-secondary;
+}
+
+.disclaimer {
+  display: block;
+  margin-top: $spacing-lg;
+  font-size: 20rpx;
+  line-height: $line-height-loose;
+  color: $color-text-tertiary;
+  text-align: center;
+}

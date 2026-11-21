@@ -1,0 +1,219 @@
+@use '@/styles/variables.scss' as *;
+
+.page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 0 $page-padding $spacing-xl;
+  background: linear-gradient(180deg, #fbf8f1 0%, $color-bg-page 320rpx);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-lg 0 $spacing-md;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: $radius-md;
+  background: $gradient-gold;
+  @include flex-center;
+  box-shadow: 0 4rpx 12rpx rgba(201, 154, 46, 0.32);
+}
+
+.logoText {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  color: $color-text-white;
+}
+
+.brandText {
+  margin-left: $spacing-sm;
+  display: flex;
+  flex-direction: column;
+}
+
+.brandTitle {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+}
+
+.brandSub {
+  margin-top: 4rpx;
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+}
+
+.refreshBtn {
+  height: $button-height-sm;
+  padding: 0 $spacing-md;
+  border-radius: $radius-button;
+  background: rgba(201, 154, 46, 0.12);
+  @include flex-center;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.refreshText {
+  font-size: $font-size-sm;
+  color: $color-primary-dark;
+  white-space: nowrap;
+}
+
+.hero {
+  background: $gradient-brand;
+  border-radius: $radius-xl;
+  padding: $spacing-lg;
+  box-shadow: 0 12rpx 32rpx rgba(34, 31, 26, 0.18);
+}
+
+.heroTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heroName {
+  font-size: $font-size-sm;
+  color: rgba(255, 255, 255, 0.72);
+  @include text-ellipsis;
+}
+
+.heroTime {
+  font-size: $font-size-xs;
+  color: rgba(255, 255, 255, 0.45);
+  white-space: nowrap;
+  margin-left: $spacing-sm;
+}
+
+.heroPrice {
+  display: flex;
+  align-items: flex-end;
+  margin-top: $spacing-md;
+}
+
+.heroValue {
+  font-size: 76rpx;
+  line-height: 1.05;
+  font-weight: $font-weight-bold;
+  color: #e6c777;
+  font-variant-numeric: tabular-nums;
+}
+
+.heroUnit {
+  margin-left: 8rpx;
+  margin-bottom: 12rpx;
+  font-size: $font-size-xs;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.heroPill {
+  margin-left: $spacing-sm;
+  margin-bottom: 14rpx;
+  height: 40rpx;
+  padding: 0 $spacing-sm;
+  border-radius: $radius-round;
+  @include flex-center;
+}
+
+.heroPillText {
+  font-size: $font-size-xs;
+  color: $color-text-white;
+  white-space: nowrap;
+}
+
+.pillUp {
+  background: $color-up;
+}
+
+.pillDown {
+  background: $color-down;
+}
+
+.pillFlat {
+  background: $color-flat;
+}
+
+.heroGrid {
+  display: flex;
+  align-items: stretch;
+  margin-top: $spacing-lg;
+  padding-top: $spacing-md;
+  border-top: 1rpx solid rgba(255, 255, 255, 0.12);
+}
+
+.heroCell {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.heroCellLabel {
+  font-size: 20rpx;
+  color: rgba(255, 255, 255, 0.45);
+  white-space: nowrap;
+}
+
+.heroCellValue {
+  margin-top: 6rpx;
+  font-size: 24rpx;
+  color: $color-text-white;
+  font-variant-numeric: tabular-nums;
+  @include text-ellipsis;
+}
+
+.sectionGap {
+  margin-top: $spacing-md;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.rowItem {
+  & + & {
+    margin-top: $spacing-sm;
+  }
+}
+
+.tips {
+  margin-top: $spacing-md;
+  padding: $spacing-md;
+  border-radius: $radius-md;
+  background: rgba(201, 154, 46, 0.1);
+}
+
+.tipTitle {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
+  color: $color-primary-dark;
+}
+
+.tipText {
+  display: block;
+  margin-top: $spacing-xs;
+  font-size: $font-size-xs;
+  line-height: $line-height-loose;
+  color: $color-text-secondary;
+}
+
+.disclaimer {
+  display: block;
+  margin-top: $spacing-lg;
+  font-size: 20rpx;
+  line-height: $line-height-loose;
+  color: $color-text-tertiary;
+  text-align: center;
+}

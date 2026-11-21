@@ -1,0 +1,174 @@
+@use '@/styles/variables.scss' as *;
+
+.page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: $spacing-md $page-padding $spacing-xl;
+  background: linear-gradient(180deg, #fbf8f1 0%, $color-bg-page 320rpx);
+}
+
+.chips {
+  @include scroll-x-container;
+  width: 100%;
+}
+
+.chip {
+  @include scroll-x-item(200rpx);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 64rpx;
+  margin-right: $spacing-sm;
+  border-radius: $radius-button;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1rpx solid $color-border;
+  box-sizing: border-box;
+}
+
+.chipActive {
+  background: $gradient-gold;
+  border-color: transparent;
+}
+
+.chipText {
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  white-space: nowrap;
+  @include text-ellipsis;
+}
+
+.chipTextActive {
+  color: $color-text-white;
+  font-weight: $font-weight-semibold;
+}
+
+.quoteBar {
+  margin-top: $spacing-md;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.quoteLeft {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.quoteName {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  @include text-ellipsis;
+}
+
+.quoteTime {
+  margin-top: 4rpx;
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+}
+
+.quoteRight {
+  display: flex;
+  align-items: flex-end;
+  margin-left: $spacing-sm;
+}
+
+.quotePrice {
+  font-size: 48rpx;
+  font-weight: $font-weight-bold;
+  font-variant-numeric: tabular-nums;
+}
+
+.quoteUnit {
+  margin-left: 6rpx;
+  margin-bottom: 8rpx;
+  font-size: 20rpx;
+  color: $color-text-tertiary;
+}
+
+.up {
+  color: $color-up;
+}
+
+.down {
+  color: $color-down;
+}
+
+.segment {
+  margin-top: $spacing-md;
+  display: flex;
+  padding: 6rpx;
+  border-radius: $radius-button;
+  background: $color-bg-card;
+  box-shadow: $shadow-card;
+}
+
+.segmentItem {
+  flex: 1;
+  height: 64rpx;
+  border-radius: $radius-button;
+  @include flex-center;
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+.segmentActive {
+  background: $gradient-gold;
+}
+
+.segmentText {
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  white-space: nowrap;
+}
+
+.segmentTextActive {
+  color: $color-text-white;
+  font-weight: $font-weight-semibold;
+}
+
+.sectionGap {
+  margin-top: $spacing-md;
+}
+
+.statGrid {
+  display: flex;
+  margin-top: $spacing-md;
+  padding: $spacing-md 0;
+  border-radius: $radius-lg;
+  background: $color-bg-card;
+  box-shadow: $shadow-card;
+}
+
+.statCell {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.statLabel {
+  font-size: 20rpx;
+  color: $color-text-tertiary;
+}
+
+.statValue {
+  margin-top: 6rpx;
+  font-size: 26rpx;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  font-variant-numeric: tabular-nums;
+}
+
+.note {
+  display: block;
+  margin-top: $spacing-md;
+  font-size: 20rpx;
+  line-height: $line-height-loose;
+  color: $color-text-tertiary;
+}
